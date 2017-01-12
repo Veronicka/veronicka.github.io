@@ -2,9 +2,18 @@
  * Created by Veronica on 12/01/2017.
  */
 <!-- Google Map Location -->
-var myCenter = new google.maps.LatLng(-23.2984851, -45.942209700000035);
-
+// var map;
+// function initMap() {
+//     map = new google.maps.Map(document.getElementById('googleMap'), {
+//         center: {lat: -34.397, lng: 150.644},
+//         zoom: 8
+//     });
+// }
 function initialize() {
+    var myCenter = new google.maps.LatLng(-23.2984851, -45.942209700000035);
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+
     var mapProp = {
         center: myCenter,
         zoom: 12,
@@ -13,7 +22,7 @@ function initialize() {
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
     var marker = new google.maps.Marker({
         position: myCenter,
@@ -22,7 +31,6 @@ function initialize() {
     marker.setMap(map);
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
 
 // Modal Image Gallery
 function onClick(element) {
@@ -33,7 +41,9 @@ function onClick(element) {
 }
 
 // Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+    myFunction()
+};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
