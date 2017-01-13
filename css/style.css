@@ -11,9 +11,9 @@
     width: 100px;
     margin-top: 15px;
 }
-.selected{
-    color: #f3f3f3;
-}
+/*.selected{*/
+    /*color: #f3f3f3;*/
+/*}*/
 .brandFont{
     font-size: 1.5em;
     font-family: Castellar;
@@ -23,7 +23,10 @@
 .selected:hover{
     text-decoration: none;
     color: #f90f9a;
-    /*text-decoration: underline;*/
+}
+
+.margList{
+    margin-left: 5em;
 }
 
 .footer {
@@ -32,7 +35,7 @@
     margin-top: 100px;
     color: #99979c;
     text-align: center;
-    background-color: #2a2730;
+        background-color: #2a2730;
 }
 .colorHeart{
     color: #f90f9a;
@@ -83,8 +86,12 @@ body, html {
     min-height: 400px;
 }
 
-.w3-margin-bottom{
-    margin-top: 5em;
+.w3-pad{
+    margin-top: 32px;
+}
+
+.centerM{
+    margin-left: 50%;
 }
 
 .w3-wide {letter-spacing: 10px;}

@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
-    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
@@ -48,7 +46,7 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
     <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">SYSTEMS <span class="w3-hide-small">ANALYST AND</span> DEVELOPER</span>
+        <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">SYSTEMS ANALYST AND DEVELOPER</span>
     </div>
 </div>
 
@@ -90,27 +88,35 @@
             <img src="/img/img8.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
         </div>
 
-        <!-- Hide this text on small devices -->
-        <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <div class="w3-col m6 w3-padding-large">
             <!--<p align="justify">{{m.moreMe}}</p>-->
             <br><br><br>
             <h4 class="w3-center">Other Skills</h4>
-            <ul>
-                <li>Spring</li>
-                <li>Hibernate</li>
-                <li>MySQL</li>
-                <li>Jenkins</li>
-                <li>Junit</li>
-                <li>DBunit</li>
-                <li>Git</li>
-                <li>MVC</li>
-                <li>TDD</li>
-                <li>HTML5</li>
-                <li>MSOffice</li>
-                <li>LabVIEW</li>
-                <li>Linux</li>
-                <li>Windows</li>
-            </ul>
+            <div class="w3-row margList">
+                <div class="w3-col m6 w2-padding-large">
+                    <ul style="list-style-type: none">
+                        <li class="selected">Spring</li>
+                        <li class="selected">Hibernate</li>
+                        <li class="selected">MySQL</li>
+                        <li class="selected">Jenkins</li>
+                        <li class="selected">Junit</li>
+                        <li class="selected">DBunit</li>
+                        <li class="selected">Git</li>
+                    </ul>
+                </div>
+                <div class="w3-col m6 w2-padding-large">
+                    <ul style="list-style-type: none">
+                        <li class="selected">MVC</li>
+                        <li class="selected">TDD</li>
+                        <li class="selected">HTML5</li>
+                        <li class="selected">MSOffice</li>
+                        <li class="selected">LabVIEW</li>
+                        <li class="selected">Linux</li>
+                        <li class="selected">Windows</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -123,54 +129,78 @@
     </div>
 </div>
 
+<div class="w3-content w3-container w3-pad" id="portfolio">
+    <h3 class="w3-center">Organization</h3>
+    <p class="w3-center"><em>The groups that I participate.<br></em></p><br>
+
+    <div class="w3-row">
+        <div class="w3-col m12 w3-center w3-padding-large">
+            <div class="w3-col m8 w3-center w3-padding-large">
+                <p align="justify">{{m.pyladiesVale}}</p>
+            </div>
+            <div class="w3-col m4 w3-center w3-padding-large">
+                <div class="w3-col m9">
+                    <a href="http://vale.pyladies.com/">
+                        <img src="/img/pyladies.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="INPE">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m12 w3-center w3-padding-large">
+            <div class="w3-col m8 w3-center w3-padding-large">
+                <p align="justify">{{m.djangoGirls}}</p>
+            </div>
+            <div class="w3-col m4 w3-center w3-padding-large">
+                <div class="w3-col m9">
+                    <a href="https://djangogirls.org/saojosedoscampos/">
+                        <img src="/img/django.jpg" style="width:80%" onclick="onClick(this)" class="w3-hover-opacity" alt="INPE">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<div class="w3-content w3-container w3-padding-64">
     <h3 class="w3-center">JOBS</h3>
     <p class="w3-center"><em>My latest jobs.<br></em></p><br>
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
-        <div class="w3-col m3">
-            <img src="/img/inpe2.jpg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="INPE">
+        <div class="w3-col m4">
+            <img src="/img/inpe2.jpg" style="width:30%" alt="INPE">
         </div>
 
-        <div class="w3-col m3">
-            <img src="/img/jetsoft.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jetsoft">
+        <div class="w3-col m4">
+            <img src="/img/jetsoft.jpg" style="width:70%" alt="Jetsoft">
         </div>
 
-        <div class="w3-col m3">
-            <img src="/img/sobtic.jpg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sobtic">
+        <div class="w3-col m4">
+            <img src="/img/sobtic.jpg" style="width:30%" alt="Sobtic">
         </div>
 
-        <div class="w3-col m3">
-            <img src="/img/home.jpg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Home">
-        </div>
     </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text
+<!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
     </div>
 </div>
--->
+
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
     <h3 class="w3-center">CONTACT</h3>
-
-    <div class="w3-row w3-padding-32 w3-section">
-        <div class="w3-col m4 w3-container">
-            <!-- Add Google Maps -->
-            <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-        </div>
-        <div class="w3-col m8 w3-container w3-section">
-            <div class="w3-large w3-margin-bottom">
-                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> São Paulo, Brazil<br>
-                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +15 12 982283799<br>
-                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: veronicka.ms@gmail.com<br>
-            </div>
-        </div>
+    <br>
+    <div class="w3-large w3-margin-bottom centerM">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> São Paulo, Brazil<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +15 12 982283799<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: veronicka.ms@gmail.com<br>
     </div>
 </div>
 
@@ -184,7 +214,5 @@
     </div>
     <p>Powered by <a href="https://github.com/Veronicka" title="W3.CSS" target="_blank" class="w3-hover-text-green">Veronica Maria</a></p>
 </footer>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4vPxIPwHhCKreKZ9uV4LRObJaPDQmBzk&callback=initialize" type="text/javascript"></script>
-
 </body>
 </html>

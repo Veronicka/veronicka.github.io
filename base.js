@@ -9,9 +9,27 @@ angular.module('myapp').factory('MyService', function () {
         aboutMe: "",
         moreMe: "",
         afterSchool: "",
+        pyladiesVale: "",
+        djangoGirls: "",
+        pyladies: pyladies,
+        django: django,
         me: me,
         more:more,
         about: about
+    };
+
+    function django(){
+        m.djangoGirls = "Django Girls is a non-profit organization and a community that empowers and helps " +
+            "women to organize free, one-day programming workshops by providing tools, resources and support. " +
+            "Volunteer run organization with hundreds of people contributing to bring more amazing women into the " +
+            "world of technology. Making technology more approachable by creating resources designed with empathy.";
+    };
+
+    function pyladies(){
+        m.pyladiesVale = "PyLadies Vale is a subgroup Pyladies. PyLadies is a International mentorship group with a focus on helping more women become active " +
+            "participants and leaders in the Python open-source community. Our mission is to promote, " +
+            "educate and advance a diverse Python community through outreach, education, " +
+            "conferences, events and social gatherings.";
     };
 
     function me(){
@@ -45,6 +63,8 @@ angular.module('myapp').controller('MyCtrl', function ($scope, MyService){
         $scope.m.me();
         $scope.m.more();
         $scope.m.about();
+        $scope.m.pyladies();
+        $scope.m.django();
     }
 
     init();
