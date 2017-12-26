@@ -1,0 +1,25 @@
+{
+  "name": "veronicka.github.io",
+  "version": "1.0.0",
+  "description": "veronica site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Veronicka/veronicka.github.io.git"
+  },
+  "keywords": [
+    "site"
+  ],
+  "author": "veronica maria",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Veronicka/veronicka.github.io/issues"
+  },
+  "homepage": "https://github.com/Veronicka/veronicka.github.io#readme",
+  "dependencies": {
+    "material-design-lite": "^1.3.0"
+  }
+}
